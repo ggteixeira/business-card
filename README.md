@@ -1,9 +1,7 @@
-It's me, Mikeal. I forked this repo from Tierney and it's awesome!
+My own npm business card.
 
 # Usage
 Via npx:
 ```
-npx mikeal
+npx joselito
 ```
-
-Not including how to use it globally because I'm not sure why you'd want this as a global command. That'd be creepy.
