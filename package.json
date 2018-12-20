@@ -4,11 +4,11 @@
   "description": "A personal card for Joselito (@breakzplatform)",
   "main": "index.js",
   "bin": {
-    "mikeal": "./bin/card.js"
+    "joselito": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikeal/bitandbang.git"
+    "url": "git+https://github.com/breakzplatform/card.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,8 +24,8 @@
     "standard": "^12.0.1"
   },
   "bugs": {
-    "url": "https://github.com/breakzplatform/bitandbang/issues"
+    "url": "https://github.com/breakzplatform/card/issues"
   },
-  "homepage": "https://github.com/breakzplatform/bitandbang#readme",
-  "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (http://www.mikealrogers.com)"
+  "homepage": "https://github.com/breakzplatform/card#readme",
+  "author": "Joselito <hello@joseli.to> (http://joseli.to)"
 }
