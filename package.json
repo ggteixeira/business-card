@@ -1,7 +1,7 @@
 {
-  "name": "mikeal",
-  "version": "1.1.1",
-  "description": "A personal card for Mikeal Rogers (@mikeal)",
+  "name": "joselito",
+  "version": "0.0.1",
+  "description": "A personal card for Joselito (@breakzplatform)",
   "main": "index.js",
   "bin": {
     "mikeal": "./bin/card.js"
@@ -24,8 +24,8 @@
     "standard": "^12.0.1"
   },
   "bugs": {
-    "url": "https://github.com/mikeal/bitandbang/issues"
+    "url": "https://github.com/breakzplatform/bitandbang/issues"
   },
-  "homepage": "https://github.com/mikeal/bitandbang#readme",
+  "homepage": "https://github.com/breakzplatform/bitandbang#readme",
   "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (http://www.mikealrogers.com)"
 }
