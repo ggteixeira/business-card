@@ -15,7 +15,7 @@ let options = {
 let data = {
   'name': chalk.white('Joselito /'),
   'handle': chalk.cyan('@breakzplatform'),
-  'work': chalk.white('stone.com && tampa.works'),
+  'work': chalk.white('stone.co / tampa.works'),
   'twitter': chalk.cyan('https://twitter.com/breakzplatform'),
   'github': chalk.cyan('https://github.com/breakzplatform'),
   'web': chalk.cyan('https://joseli.to'),
