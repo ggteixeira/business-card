@@ -27,6 +27,10 @@ const data = {
     en: chalk.hex("#F20089")("hey@joseli.to"),
     pt: chalk.hex("#F20089")("oi@joseli.to"),
   },
+  pronoun: {
+    en: chalk.white("(he/him/his)"),
+    pt: chalk.white("(ele/dele)"),
+  },
   work: {
     en: chalk.white("Tech Lead @ StoneCo"),
     pt: chalk.white("Tech Lead / Stone Pagamentos"),
@@ -62,7 +66,7 @@ const label = {
 
 const output = `${data.logo}
 
-${data.name} ${data.mail[lang]}
+${data.name} ${data.mail[lang]} ${data.pronoun[lang]}
 
 
 ${label[lang].work}  ${data.work[lang]}
