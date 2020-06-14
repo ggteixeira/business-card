@@ -1,42 +1,82 @@
 #!/usr/bin/env node
-// 👆 Used to tell Node.js that this is a CLI tool
 
-// Pull in our modules
-var chalk = require('chalk')
-var boxen = require('boxen')
+const chalk = require("chalk");
+const boxen = require("boxen");
+const argv = require("yargs").argv;
 
-// Define options for Boxen
-let options = {
+const lang = argv.lang || "en";
+
+const options = {
   padding: 1,
-  margin: 1,
-  borderStyle: 'round'
-}
-// Text + chalk definitions
-let data = {
-  'name': chalk.white('Joselito /'),
-  'handle': chalk.cyan('@breakzplatform'),
-  'work': chalk.white('stone.co / tampa.works'),
-  'twitter': chalk.cyan('https://twitter.com/breakzplatform'),
-  'github': chalk.cyan('https://github.com/breakzplatform'),
-  'web': chalk.cyan('https://joseli.to'),
-  'npx': chalk.white('npx joselito'),
-  'labelWork': chalk.white.bold('      Work:'),
-  'labelTwitter': chalk.white.bold('   Twitter:'),
-  'labelGitHub': chalk.white.bold('    GitHub:'),
-  'labelWeb': chalk.white.bold('       Web:'),
-  'labelCard': chalk.white.bold('      Card:')
-}
+  margin: 2,
+  borderStyle: "double",
+  borderColor: "#F20089",
+};
 
-// Actual strings we're going to output
-var newline = '\n'
-var heading = `${data.name} ${data.handle}`
-var working = `${data.labelWork}  ${data.work}`
-var twittering = `${data.labelTwitter}  ${data.twitter}`
-var githubing = `${data.labelGitHub}  ${data.github}`
-var webing = `${data.labelWeb}  ${data.web}`
-var carding = `${data.labelCard}  ${data.npx}`
+const data = {
+  logo: chalk.white(`     __ _____ 
+  __|  |     |
+ |  |  |  |  |
+ |_____|_____|
+  _____ _____ 
+ |   __|   __|
+ |__   |   __|
+ |_____|_____|`),
+  name: chalk.white(" Joselito /"),
+  mail: {
+    en: chalk.hex("#F20089")("hey@joseli.to"),
+    pt: chalk.hex("#F20089")("oi@joseli.to"),
+  },
+  work: {
+    en: chalk.white("Tech Lead @ StoneCo"),
+    pt: chalk.white("Tech Lead / Stone Pagamentos"),
+  },
+  twitter: chalk.hex("#F20089")("https://twitter.com/breakzplatform"),
+  github: chalk.hex("#F20089")("https://github.com/breakzplatform"),
+  unsplash: chalk.hex("#F20089")("https://unsplash.com/@breakzplatform"),
+  picpay: chalk.hex("#F20089")("https://picpay.me/joselitojunior"),
+  web: chalk.hex("#F20089")("https://joseli.to"),
+  npx: chalk.white("npx joselito"),
+};
 
-// Put all our output together into a single variable so we can use boxen effectively
-let output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + webing + newline + newline + carding
+const defaultLabel = {
+  en: {
+    work: chalk.white.bold("      Work:"),
+    twitter: chalk.white.bold("   Twitter:"),
+    github: chalk.white.bold("    GitHub:"),
+    picpay: chalk.white.bold("    PicPay:"),
+    unsplash: chalk.white.bold("  Unsplash:"),
+    web: chalk.white.bold("       Web:"),
+    npx: chalk.white.bold("      Card:"),
+  },
+};
 
-console.log(chalk.green(boxen(output, options)))
+const label = {
+  ...defaultLabel,
+  pt: {
+    ...defaultLabel.en,
+    work: chalk.white.bold("  Trabalho:"),
+    npx: chalk.white.bold("    Cartão:"),
+  },
+};
+
+const output = `${data.logo}
+
+${data.name} ${data.mail[lang]}
+
+
+${label[lang].work}  ${data.work[lang]}
+
+${label[lang].web}  ${data.web}
+
+${label[lang].twitter}  ${data.twitter}
+${label[lang].github}  ${data.github}
+${label[lang].unsplash}  ${data.unsplash}
+${label[lang].picpay}  ${data.picpay}
+
+${label[lang].npx}  ${data.npx}`;
+
+console.clear();
+console.log(`
+`);
+console.log(chalk.magenta(boxen(output, options)));
