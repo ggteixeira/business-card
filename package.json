@@ -1,6 +1,6 @@
 {
   "name": "joselito",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A personal card for Joselito (@breakzplatform)",
   "main": "index.js",
   "bin": {
