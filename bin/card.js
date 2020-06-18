@@ -33,7 +33,7 @@ const data = {
   },
   work: {
     en: chalk.white("Tech Lead @ StoneCo"),
-    pt: chalk.white("Tech Lead / Stone Pagamentos"),
+    pt: chalk.white("Líder Técnico / Stone Pagamentos"),
   },
   twitter: chalk.hex("#F20089")("https://twitter.com/breakzplatform"),
   github: chalk.hex("#F20089")("https://github.com/breakzplatform"),
@@ -81,6 +81,4 @@ ${label[lang].picpay}  ${data.picpay}
 ${label[lang].npx}  ${data.npx}`;
 
 console.clear();
-console.log(`
-`);
 console.log(chalk.magenta(boxen(output, options)));
