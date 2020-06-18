@@ -44,21 +44,19 @@ const data = {
 };
 
 const defaultLabel = {
-  en: {
-    work: chalk.white.bold("      Work:"),
-    twitter: chalk.white.bold("   Twitter:"),
-    github: chalk.white.bold("    GitHub:"),
-    picpay: chalk.white.bold("    PicPay:"),
-    unsplash: chalk.white.bold("  Unsplash:"),
-    web: chalk.white.bold("       Web:"),
-    npx: chalk.white.bold("      Card:"),
-  },
+  work: chalk.white.bold("      Work:"),
+  twitter: chalk.white.bold("   Twitter:"),
+  github: chalk.white.bold("    GitHub:"),
+  picpay: chalk.white.bold("    PicPay:"),
+  unsplash: chalk.white.bold("  Unsplash:"),
+  web: chalk.white.bold("       Web:"),
+  npx: chalk.white.bold("      Card:"),
 };
 
 const label = {
-  ...defaultLabel,
+  en: { ...defaultLabel },
   pt: {
-    ...defaultLabel.en,
+    ...defaultLabel,
     work: chalk.white.bold("  Trabalho:"),
     npx: chalk.white.bold("    Cartão:"),
   },
