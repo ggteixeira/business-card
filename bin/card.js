@@ -38,7 +38,10 @@ const data = {
   twitter: chalk.hex("#F20089")("https://twitter.com/breakzplatform"),
   github: chalk.hex("#F20089")("https://github.com/breakzplatform"),
   unsplash: chalk.hex("#F20089")("https://unsplash.com/@breakzplatform"),
-  picpay: chalk.hex("#F20089")("https://picpay.me/joselitojunior"),
+  picpay: {
+    pt: chalk.hex("#F20089")("https://picpay.me/joselitojunior"),
+    en: chalk.hex("#F20089")("https://buymeacoff.ee/joselito")
+  },
   web: chalk.hex("#F20089")("https://joseli.to"),
   npx: chalk.white("npx joselito"),
 };
@@ -47,7 +50,7 @@ const defaultLabel = {
   work: chalk.white.bold("      Work:"),
   twitter: chalk.white.bold("   Twitter:"),
   github: chalk.white.bold("    GitHub:"),
-  picpay: chalk.white.bold("    PicPay:"),
+  picpay: chalk.white.bold("       BMC:"),
   unsplash: chalk.white.bold("  Unsplash:"),
   web: chalk.white.bold("       Web:"),
   npx: chalk.white.bold("      Card:"),
@@ -59,6 +62,7 @@ const label = {
     ...defaultLabel,
     work: chalk.white.bold("  Trabalho:"),
     npx: chalk.white.bold("    Cartão:"),
+    picpay: chalk.white.bold("    PicPay:"),
   },
 };
 
@@ -74,7 +78,7 @@ ${label[lang].web}  ${data.web}
 ${label[lang].twitter}  ${data.twitter}
 ${label[lang].github}  ${data.github}
 ${label[lang].unsplash}  ${data.unsplash}
-${label[lang].picpay}  ${data.picpay}
+${label[lang].picpay}  ${data.picpay[lang]}
 
 ${label[lang].npx}  ${data.npx}`;
 
