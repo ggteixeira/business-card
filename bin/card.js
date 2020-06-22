@@ -40,20 +40,20 @@ const data = {
   unsplash: chalk.hex("#F20089")("https://unsplash.com/@breakzplatform"),
   picpay: {
     pt: chalk.hex("#F20089")("https://picpay.me/joselitojunior"),
-    en: chalk.hex("#F20089")("https://buymeacoff.ee/joselito")
+    en: chalk.hex("#F20089")("https://ko-fi.com/joselito")
   },
   web: chalk.hex("#F20089")("https://joseli.to"),
-  npx: chalk.white("npx joselito"),
+  card: chalk.white("npx joselito"),
 };
 
 const defaultLabel = {
   work: chalk.white.bold("      Work:"),
   twitter: chalk.white.bold("   Twitter:"),
   github: chalk.white.bold("    GitHub:"),
-  picpay: chalk.white.bold("       BMC:"),
+  picpay: chalk.white.bold("     Ko-fi:"),
   unsplash: chalk.white.bold("  Unsplash:"),
   web: chalk.white.bold("       Web:"),
-  npx: chalk.white.bold("      Card:"),
+  card: chalk.white.bold("      Card:"),
 };
 
 const label = {
@@ -61,7 +61,7 @@ const label = {
   pt: {
     ...defaultLabel,
     work: chalk.white.bold("  Trabalho:"),
-    npx: chalk.white.bold("    Cartão:"),
+    card: chalk.white.bold("    Cartão:"),
     picpay: chalk.white.bold("    PicPay:"),
   },
 };
@@ -80,7 +80,7 @@ ${label[lang].github}  ${data.github}
 ${label[lang].unsplash}  ${data.unsplash}
 ${label[lang].picpay}  ${data.picpay[lang]}
 
-${label[lang].npx}  ${data.npx}`;
+${label[lang].card}  ${data.card}`;
 
 console.clear();
 console.log(chalk.magenta(boxen(output, options)));
