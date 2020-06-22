@@ -23,10 +23,7 @@ const data = {
  |__   |   __|
  |_____|_____|`),
   name: chalk.white(" Joselito /"),
-  mail: {
-    en: chalk.hex("#F20089")("hey@joseli.to"),
-    pt: chalk.hex("#F20089")("oi@joseli.to"),
-  },
+  mail: chalk.hex("#F20089")("joselito@hey.com"),
   pronoun: {
     en: chalk.white("(he/him/his)"),
     pt: chalk.white("(ele/dele)"),
@@ -68,7 +65,7 @@ const label = {
 
 const output = `${data.logo}
 
-${data.name} ${data.mail[lang]} ${data.pronoun[lang]}
+${data.name} ${data.mail} ${data.pronoun[lang]}
 
 
 ${label[lang].work}  ${data.work[lang]}
