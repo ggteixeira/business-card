@@ -23,14 +23,14 @@ const data = {
  |__   |   __|
  |_____|_____|`),
   name: chalk.white(" Joselito /"),
-  mail: chalk.hex("#F20089")("joselito@hey.com"),
+  mail: chalk.hex("#F20089")("hey@joseli.to"),
   pronoun: {
     en: chalk.white("(he/him/his)"),
     pt: chalk.white("(ele/dele)"),
   },
   work: {
-    en: chalk.white("Tech Lead @ StoneCo"),
-    pt: chalk.white("Líder Técnico / Stone Pagamentos"),
+    en: chalk.white("Tech Lead / Sallve"),
+    pt: chalk.white("Líder Técnico / Sallve"),
   },
   twitter: chalk.hex("#F20089")("https://twitter.com/breakzplatform"),
   github: chalk.hex("#F20089")("https://github.com/breakzplatform"),
@@ -40,7 +40,6 @@ const data = {
     en: chalk.hex("#F20089")("https://ko-fi.com/joselito")
   },
   web: chalk.hex("#F20089")("https://joseli.to"),
-  card: chalk.white("npx joselito"),
 };
 
 const defaultLabel = {
@@ -50,7 +49,6 @@ const defaultLabel = {
   picpay: chalk.white.bold("     Ko-fi:"),
   unsplash: chalk.white.bold("  Unsplash:"),
   web: chalk.white.bold("       Web:"),
-  card: chalk.white.bold("      Card:"),
 };
 
 const label = {
@@ -75,9 +73,7 @@ ${label[lang].web}  ${data.web}
 ${label[lang].twitter}  ${data.twitter}
 ${label[lang].github}  ${data.github}
 ${label[lang].unsplash}  ${data.unsplash}
-${label[lang].picpay}  ${data.picpay[lang]}
-
-${label[lang].card}  ${data.card}`;
+${label[lang].picpay}  ${data.picpay[lang]}`;
 
 console.clear();
 console.log(chalk.magenta(boxen(output, options)));
