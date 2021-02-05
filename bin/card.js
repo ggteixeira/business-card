@@ -23,7 +23,7 @@ const data = {
  |__   |   __|
  |_____|_____|`),
   name: chalk.white(" Joselito /"),
-  mail: chalk.hex("#F20089")("hey@joseli.to"),
+  mail: chalk.hex("#F20089")("joseli.to@joseli.to"),
   pronoun: {
     en: chalk.white("(he/him/his)"),
     pt: chalk.white("(ele/dele)"),
