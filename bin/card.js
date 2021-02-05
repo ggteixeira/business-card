@@ -22,15 +22,15 @@ const data = {
  |   __|   __|
  |__   |   __|
  |_____|_____|`),
-  name: chalk.white(" Joselito /"),
+  name: chalk.white(" Joselito ·"),
   mail: chalk.hex("#F20089")("joseli.to@joseli.to"),
   pronoun: {
     en: chalk.white("(he/him/his)"),
     pt: chalk.white("(ele/dele)"),
   },
   work: {
-    en: chalk.white("Tech Lead / Sallve"),
-    pt: chalk.white("Líder Técnico / Sallve"),
+    en: chalk.white("Tech Lead · Sallve"),
+    pt: chalk.white("Líder Técnico · Sallve"),
   },
   twitter: chalk.hex("#F20089")("https://twitter.com/breakzplatform"),
   github: chalk.hex("#F20089")("https://github.com/breakzplatform"),
