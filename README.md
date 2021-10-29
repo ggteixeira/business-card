@@ -1,4 +1,4 @@
-<img src="https://joseli.to/logo-white.svg" width="224">
+<img src="https://static.joseli.to/joseli.to/HomePage/logo.png" width="256">
 
 ![npm-publish](https://github.com/breakzplatform/card/workflows/npm-publish/badge.svg)
 

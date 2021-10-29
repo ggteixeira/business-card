@@ -1,8 +1,9 @@
 {
   "name": "joselito",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "description": "A personal card for Joselito (@breakzplatform)",
-  "main": "index.js",
+  "main": "./bin/card.js",
+  "type": "module",
   "bin": {
     "joselito": "./bin/card.js"
   },
@@ -16,17 +17,17 @@
   "keywords": [],
   "license": "MIT",
   "dependencies": {
-    "boxen": "^2.1.0",
+    "boxen": "^6.2.1",
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
     "yargs": "^15.3.1"
   },
   "devDependencies": {
-    "standard": "^12.0.1"
+    "standard": "^16.0.4"
   },
   "bugs": {
     "url": "https://github.com/breakzplatform/card/issues"
   },
   "homepage": "https://joseli.to",
-  "author": "Joselito <joseli.to@joseli.to> (http://joseli.to)"
+  "author": "Joselito <eu@joseli.to> (http://joseli.to)"
 }
