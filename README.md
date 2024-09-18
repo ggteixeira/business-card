@@ -1,24 +1,29 @@
-<img src="https://static.joseli.to/joseli.to/HomePage/logo.png" width="256">
+# NPM Business Card
+
+<img src="https://avatars.githubusercontent.com/u/46376400?s=200&v=4" width="256">
+
+---
 
 ![npm-publish](https://github.com/breakzplatform/card/workflows/npm-publish/badge.svg)
 
-My own npm business card.
+My npm business card.
 
-# Usage
+# Instructions
 
-Via npx:
+Open your terminal emulator and type:
 
 ```bash
 npx guiteixeira
-
-
-
 ```
 
-or
+or, for the Portuguese version, use:
 
 ```bash
-npx guiteixeira --lang pt
+npx guiteixeira --lang br
 ```
 
-for the portuguese version
+---
+
+This project as **heavily inspired** by (aka copied from) [Joselito's](https://github.com/breakzplatform/card) business card, which as forked from... well, you know, that's kinda how open-source works!
+
+¯\\_(ツ)_/¯
