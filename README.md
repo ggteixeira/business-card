@@ -4,7 +4,7 @@
 
 ---
 
-![npm-publish](https://github.com/breakzplatform/card/workflows/npm-publish/badge.svg)
+![npm-publish](https://github.com/ggteixeira/card/workflows/npm-publish/badge.svg)
 
 My npm business card.
 
