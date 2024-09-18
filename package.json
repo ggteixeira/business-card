@@ -1,15 +1,15 @@
 {
-  "name": "joselito",
+  "name": "guilherme",
   "version": "1.4.1",
-  "description": "A personal card for Joselito (@breakzplatform)",
+  "description": "A personal card for guilherme (@ggteixeira)",
   "main": "./bin/card.js",
   "type": "module",
   "bin": {
-    "joselito": "./bin/card.js"
+    "guilherme": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/breakzplatform/card.git"
+    "url": "git+https://github.com/ggteixeira/card.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "boxen": "^6.2.1",
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "commander": "^2.19.0",
     "yargs": "^15.3.1"
   },
@@ -26,8 +26,8 @@
     "standard": "^16.0.4"
   },
   "bugs": {
-    "url": "https://github.com/breakzplatform/card/issues"
+    "url": "https://github.com/ggteixeira/card/issues"
   },
-  "homepage": "https://joseli.to",
-  "author": "Joselito <eu@joseli.to> (http://joseli.to)"
+  "homepage": "https://guiteixeira.dev",
+  "author": "Guilherme Teixeira <hello@guiteixeira.dev> (https://guiteixeira.dev)"
 }

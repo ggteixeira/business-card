@@ -11,51 +11,51 @@ const lang = argv.lang || "en";
 const options = {
   padding: 1,
   margin: 1,
-  title: "joseli.to",
+  title: "λ",
   titleAlignment: "center",
   borderStyle: "bold",
-  borderColor: "#652585",
+  borderColor: "#6495ED",
 };
 
+const art = `
+            _______  __   __  ___  
+           |       ||  | |  ||   | 
+           |    ___||  | |  ||   | 
+           |   | __ |  |_|  ||   | 
+           |   ||  ||       ||   | 
+           |   |_| ||       ||   | 
+           |_______||_______||___| 
+`;
+
 const data = {
-  logo: chalk.white(`     __ _____ 
-  __|  |     |
- |  |  |  |  |
- |_____|_____|
-  _____ _____ 
- |   __|   __|
- |__   |   __|
- |_____|_____|`),
-  name: chalk.white(" Joselito ·"),
+  logo: chalk.blueBright(art),
+
+  name: chalk.white("     Gui Teixeira ·"),
+  work: chalk.white("Software Developer"),
   mail: {
-    en: chalk.hex(options.borderColor)("me@joseli.to"),
-    pt: chalk.hex(options.borderColor)("eu@joseli.to"),
+    en: chalk.hex(options.borderColor)("hello@guiteixeira.dev"),
+    pt: chalk.hex(options.borderColor)("ola@guiteixeira.dev"),
   },
-  pronoun: {
-    en: chalk.white("(he/him/his)"),
-    pt: chalk.white("(ele/dele)"),
+  github: chalk.hex(options.borderColor)("https://github.com/ggteixeira"),
+  linkedin: chalk.hex(options.borderColor)(
+    "https://www.linkedin.com/in/guiatf/",
+  ),
+  blog: {
+    pt: chalk.hex(options.borderColor)("https://dev.to/guiteixeira"),
+    en: chalk.hex(options.borderColor)("https://dev.to/guiteixeira"),
   },
-  work: chalk.white("Community Program Manager · Turing"),
-  twitter: chalk.hex(options.borderColor)("https://twitter.com/breakzplatform"),
-  github: chalk.hex(options.borderColor)("https://github.com/breakzplatform"),
-  unsplash: chalk.hex(options.borderColor)("https://unsplash.com/@breakzplatform"),
-  picpay: {
-    pt: chalk.hex(options.borderColor)("https://picpay.me/joselitojunior"),
-    en: chalk.hex(options.borderColor)("https://ko-fi.com/joselito")
-  },
-  web: {
-    pt: chalk.hex(options.borderColor)("https://joseli.to/pt"),
-    en: chalk.hex(options.borderColor)("https://joseli.to")
+  website: {
+    pt: chalk.hex(options.borderColor)("https://guiteixeira.dev"),
+    en: chalk.hex(options.borderColor)("https://guiteixeira.dev"),
   },
 };
 
 const defaultLabel = {
   work: chalk.white.bold("     Work:"),
-  twitter: chalk.white.bold("  Twitter:"),
+  website: chalk.white.bold("  Website:"),
   github: chalk.white.bold("   GitHub:"),
-  picpay: chalk.white.bold("    Ko-fi:"),
-  unsplash: chalk.white.bold(" Unsplash:"),
-  web: chalk.white.bold("      Web:"),
+  linkedin: chalk.white.bold(" LinkedIn:"),
+  blog: chalk.white.bold("     Blog:"),
 };
 
 const label = {
@@ -63,25 +63,21 @@ const label = {
   pt: {
     ...defaultLabel,
     work: chalk.white.bold(" Trabalho:"),
-    card: chalk.white.bold("   Cartão:"),
-    picpay: chalk.white.bold("   PicPay:"),
-    web: chalk.white.bold("     Site:"),
+    blog: chalk.white.bold("   Blog:"),
+    website: chalk.white.bold("     Site:"),
   },
 };
 
 const output = `${data.logo}
 
-
-${data.name} ${data.mail[lang]} ${data.pronoun[lang]}
+${data.name} ${data.mail[lang]}
 
 ${label[lang].work}  ${data.work}
-            ${chalk.hex(options.borderColor)("joselito@turing.com")}
-
-${label[lang].web}  ${data.web[lang]}
-${label[lang].twitter}  ${data.twitter}
+            ${chalk.hex(options.borderColor)("")}
+${label[lang].website}  ${data.website[lang]}
 ${label[lang].github}  ${data.github}
-${label[lang].unsplash}  ${data.unsplash}
-${label[lang].picpay}  ${data.picpay[lang]}`;
+${label[lang].linkedin}  ${data.linkedin}
+${label[lang].blog}  ${data.blog[lang]}`;
 
 console.clear();
 console.log(chalk(boxen(output, options)));
