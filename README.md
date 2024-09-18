@@ -24,6 +24,6 @@ npx guiteixeira --lang br
 
 ---
 
-This project as **heavily inspired** by (aka copied from) [Joselito's](https://github.com/breakzplatform/card) business card, which as forked from... well, you know, that's kinda how open-source works!
+This project as **heavily inspired** by (aka copied from) [Joselito's](https://github.com/breakzplatform/card) business card, which was forked from... well, you know, that's kinda how open-source works!
 
 ¯\\_(ツ)_/¯
