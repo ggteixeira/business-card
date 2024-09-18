@@ -34,18 +34,18 @@ const data = {
   work: chalk.white("Software Developer"),
   mail: {
     en: chalk.hex(options.borderColor)("hello@guiteixeira.dev"),
-    pt: chalk.hex(options.borderColor)("ola@guiteixeira.dev"),
+    br: chalk.hex(options.borderColor)("ola@guiteixeira.dev"),
   },
   github: chalk.hex(options.borderColor)("https://github.com/ggteixeira"),
   linkedin: chalk.hex(options.borderColor)(
     "https://www.linkedin.com/in/guiatf/",
   ),
   blog: {
-    pt: chalk.hex(options.borderColor)("https://dev.to/guiteixeira"),
+    br: chalk.hex(options.borderColor)("https://dev.to/guiteixeira"),
     en: chalk.hex(options.borderColor)("https://dev.to/guiteixeira"),
   },
   website: {
-    pt: chalk.hex(options.borderColor)("https://guiteixeira.dev"),
+    br: chalk.hex(options.borderColor)("https://guiteixeira.dev"),
     en: chalk.hex(options.borderColor)("https://guiteixeira.dev"),
   },
 };
@@ -60,7 +60,7 @@ const defaultLabel = {
 
 const label = {
   en: { ...defaultLabel },
-  pt: {
+  br: {
     ...defaultLabel,
     work: chalk.white.bold(" Trabalho:"),
     blog: chalk.white.bold("   Blog:"),
