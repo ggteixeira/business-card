@@ -1,11 +1,11 @@
 {
-  "name": "guilherme",
+  "name": "guiteixeira",
   "version": "1.4.1",
   "description": "A personal card for guilherme (@ggteixeira)",
   "main": "./bin/card.js",
   "type": "module",
   "bin": {
-    "guilherme": "./bin/card.js"
+    "guilherme": "bin/card.js"
   },
   "repository": {
     "type": "git",

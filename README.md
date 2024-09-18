@@ -5,7 +5,20 @@
 My own npm business card.
 
 # Usage
+
 Via npx:
+
+```bash
+npx guiteixeira
+
+
+
 ```
-npx joselito
+
+or
+
+```bash
+npx guiteixeira --lang pt
 ```
+
+for the portuguese version
