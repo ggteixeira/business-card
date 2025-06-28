@@ -33,8 +33,8 @@ const data = {
   name: chalk.white("     Gui Teixeira ·"),
   work: chalk.white("Software Developer"),
   mail: {
-    en: chalk.hex(options.borderColor)("hello@guiteixeira.dev"),
-    br: chalk.hex(options.borderColor)("ola@guiteixeira.dev"),
+    en: chalk.hex(options.borderColor)("cartao.de.visita@guiteixeira.dev"),
+    br: chalk.hex(options.borderColor)("business.card@guiteixeira.dev"),
   },
   github: chalk.hex(options.borderColor)("https://github.com/ggteixeira"),
   linkedin: chalk.hex(options.borderColor)(
